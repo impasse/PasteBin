@@ -2,19 +2,17 @@
 
 ## Install
 
->before
-install nodejs
-install redis
+>install `nodejs` `redis` before
 
 `npm install`
 
-## Configure
+## How to Configure
 
 Used with Redis default configure.If different,modify `db.js`
 
 If youu want to change port, edit `bin/www`
 
-## Use
+## How to Use
 
 visit and write you document on ckeditor,submited and It will generate a short link for you.
 
