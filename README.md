@@ -2,13 +2,17 @@
 
 ## Install
 
+>before
+install nodejs
+install redis
+
 `npm install`
 
 ## Configure
 
 Used with Redis default configure.If different,modify `db.js`
 
-Change port at `bin/www`
+If youu want to change port, edit `bin/www`
 
 ## Use
 
