@@ -1,0 +1,15 @@
+extends layout
+block heads
+    link(rel='stylesheet',type='text/css',href="/css/bootstrap.min.css")
+    script(src = '/js/jquery-2.1.4.min.js')
+    script(src='/js/bootstrap.min.js')
+block content
+    div.container
+        div.row
+            div.col-md-12
+                h1 PasteBin
+        div.row
+            div.col-md-4
+                p 链接已生成
+            div.col-md-8
+                a(href=url,target='__blank')= url

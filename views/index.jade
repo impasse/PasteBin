@@ -1,0 +1,19 @@
+extends layout
+
+block heads
+    link(rel='stylesheet',type='text/css',href="/css/bootstrap.min.css")
+    script(src='/ckeditor/ckeditor.js')
+    script(src = '/js/jquery-2.1.4.min.js')
+    script(src='/js/bootstrap.min.js')
+    
+block content
+  div.container
+    div.row
+      div.col-md-12
+        h1 PasteBin
+    div.row
+      div.col-md-12
+        form(action='/add',method='post')
+          textarea(class='ckeditor',name='text',placefolder='输入内容...')#text= text
+          br
+          input(type='submit',value='提交').btn.center-block
